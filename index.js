@@ -16,7 +16,7 @@ class CSSLoader {
   }
 
   fetch( load, fetch ) {
-    let path = load.metadata.pluginArgument,
+    let path = load.address,
       deps = this._deps[path] = []
     // Create the element for this file if it isn't already
     // to ensure the correct order of output
